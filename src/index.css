@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #0A0A0A;
+  --muted-foreground: #525252;
+  --card: #FFFFFF;
+  --card-foreground: #0A0A0A;
+  --primary: #0A0A0A;
+  --primary-foreground: #FAFAFA;
+  --secondary: #F5F5F5;
+  --secondary-foreground: #0A0A0A;
+  --accent: #F5F5F5;
+  --accent-foreground: #0A0A0A;
+  --border: #E5E5E5;
+  --radius: 0.75rem;
+
+  --pastel-blue: #cce7ff;
+  --pastel-blue-text: #3b82f6;
+  --pastel-green: #d1fae5;
+  --pastel-green-text: #10b981;
+  --pastel-purple: #e9d8fd;
+  --pastel-purple-text: #8b5cf6;
+  --pastel-orange: #ffedd5;
+  --pastel-orange-text: #f97316;
+  --pastel-pink: #fce7f3;
+  --pastel-pink-text: #ec4899;
+  --pastel-red: #fee2e2;
+  --pastel-red-text: #ef4444;
+  --pastel-yellow: #fef9c3;
+  --pastel-yellow-text: #f59e0b;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #212121 0%, #525252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-shadow { box-shadow: 0px 2px 8px rgba(0,0,0,0.04), 0px 8px 24px rgba(0,0,0,0.06); }
+.button-shadow { box-shadow: 0px 1px 2px rgba(0,0,0,0.05), 0px 4px 12px rgba(0,0,0,0.08); }
+.soft-gradient-background { background: radial-gradient(circle at 50% 0%, rgba(233,216,253,0.15) 0%, rgba(255,255,255,0) 40%); }
+.subtle-border { border: 1px solid var(--border); }
+
+.bg-gradient-pastel-blue { background-image: linear-gradient(to top right, #ffffff, #f0f7ff); }
+.bg-gradient-pastel-orange { background-image: linear-gradient(to top right, #ffffff, #fff7ed); }
+
+.bg-pastel-blue { background-color: var(--pastel-blue); }
+.text-pastel-blue-text { color: var(--pastel-blue-text); }
+.bg-pastel-green { background-color: var(--pastel-green); }
+.text-pastel-green-text { color: var(--pastel-green-text); }
+.bg-pastel-purple { background-color: var(--pastel-purple); }
+.text-pastel-purple-text { color: var(--pastel-purple-text); }
+.bg-pastel-orange { background-color: var(--pastel-orange); }
+.text-pastel-orange-text { color: var(--pastel-orange-text); }
+.bg-pastel-pink { background-color: var(--pastel-pink); }
+.text-pastel-pink-text { color: var(--pastel-pink-text); }
+.bg-pastel-red { background-color: var(--pastel-red); }
+.text-pastel-red-text { color: var(--pastel-red-text); }
+.bg-pastel-yellow { background-color: var(--pastel-yellow); }
+.text-pastel-yellow-text { color: var(--pastel-yellow-text); }
+
+
+
